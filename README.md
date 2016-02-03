@@ -35,46 +35,45 @@ To do:
 * Treat 'Various' albums differently (which will also probably never happen now)
 
 Version 1.0.a: May 03 2008
-Released:	No
-Pretty much a rewrite so gave it a new name and version
+
+* Pretty much a rewrite so gave it a new name and version
 
 Version 1.0.b: August 23 2008
-Released:	Yes
-Initial release
+
+* Initial release
 
 Version 1.0.c: August 24 2008
-Released: 	Yes
-Moved indexing of songs to run after daemonizing to speed boot up on systems that load it as part of the initialization. (I do and the old 
-version sucked)
+
+* Moved indexing of songs to run after daemonizing to speed boot up on systems that load it as part of the initialization. (I do and the old version sucked)
 
 Version 1.0.d: September 08 2008
-Released:	Yes
-Added the option to serve songs from an external web server and suppress the running of the internal web server. See option --urlprefix.
-Centralized the handling of configuration options by putting them into a hash and passing it to those who need it. 
-Massively reduced dependancy on global variables. 
-Deleted unused variables.
-Added persistent index on disk to speed start up with rebuild option.
-Added support for playlists.
+
+* Added the option to serve songs from an external web server and suppress the running of the internal web server. See option --urlprefix.
+* Centralized the handling of configuration options by putting them into a hash and passing it to those who need it. 
+* Massively reduced dependancy on global variables. 
+* Deleted unused variables.
+* Added persistent index on disk to speed start up with rebuild option.
+* Added support for playlists.
 
 Version 1.0.e: October 30 2008
-Released:	Yes
-Added all of the ID3V1 standard genres to the genre interpreter.
-Added playlist support
-Added random song & random album support. This made a fairly radical change to the UI on the Streamium. It will only support a maximum of five top level nodes. Node five is now Extras with sub-nodes of Playlists and Randoms.
-Fixed code to generate valid XML
-Ensured text from ID3 tags is decoded properly
-Write out PID file for easier daemon control
-Kill web server when main is terminated
-Canned the idea of a list of played files. Too difficult to implement in my design for the value it gives.
+
+* Added all of the ID3V1 standard genres to the genre interpreter.
+* Added playlist support
+* Added random song & random album support. This made a fairly radical change to the UI on the Streamium. It will only support a maximum of five top level nodes. Node five is now Extras with sub-nodes of Playlists and Randoms.
+* Fixed code to generate valid XML
+* Ensured text from ID3 tags is decoded properly
+* Write out PID file for easier daemon control
+* Kill web server when main is terminated
+* Canned the idea of a list of played files. Too difficult to implement in my design for the value it gives.
 
 Version 1.0.f: March 24 2009
-Released:	Yes
-Fixed index file option bug
-Added 'index and quit' option
-Made options case sensitive
-Modified pidfile option to -Pidfile
+
+* Fixed index file option bug
+* Added 'index and quit' option
+* Made options case sensitive
+* Modified pidfile option to -Pidfile
 
 Version 1.0.g: February 01 2012
-Released:	Yes
-Fixed bug that occured when there were no playlists to index
-Modified code to use functionality available on a Synology NAS device
+
+* Fixed bug that occured when there were no playlists to index
+* Modified code to use functionality available on a Synology NAS device
